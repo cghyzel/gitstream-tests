@@ -1,6 +1,6 @@
 {
   "log": [
-    {
+    {https://github.com/cghyzel/gitstream-tests/blob/ai_log_test/ai.log
       "ticket_id": "DUMMY",
       "description": "This is a test log",
       "ai_version": "1.2.3",
@@ -10,7 +10,7 @@
       "ticket_id": "DUMMY",
       "description": "This is a test log",
       "ai_version": "1.2.3",
-      "llm_version": "default-local-v2-test"
+      "llm_version": "default-claue-v2-test"
     }
   ]
 }
