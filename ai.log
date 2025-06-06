@@ -5,6 +5,12 @@
       "description": "This is a test log",
       "ai_version": "1.2.3",
       "llm_version": "default-claude-3-7-sonnet-v2-test"
+    },
+    {
+      "ticket_id": "DUMMY",
+      "description": "This is a test log",
+      "ai_version": "1.2.3",
+      "llm_version": "default-gpt-4o-sonnet-v2-test"
     }
   ]
 }
