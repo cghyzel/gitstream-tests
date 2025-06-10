@@ -14,7 +14,6 @@ automations:
         args:
           label: "{{ calc.etr }} min review"
           color: {{ colors.red if (calc.etr >= 20) else ( colors.yellow if (calc.etr >= 5) else colors.green ) }}
-
   # Inform PR authors when they fail to reference Jira tickets in the PR title or description.
   label_missing_jira_info:
     if:
@@ -29,16 +28,13 @@ automations:
           comment: |
             This PR is missing a Jira ticket reference in the title or description.
             Please add a Jira ticket reference to the title or description of this PR.
-
-
   request_changes_when_big:
     if:
-        - {{ branch.diff.size > 10 }}
+      - {{ (branch.diff.size > 10) }}
     run: 
       - action: request-changes@v1
-          args:
-            comment: |
-              TOO BIG
+        args:
+          comment: "TOO BIG"
   nice_try:
     if:
       - true
@@ -46,7 +42,3 @@ automations:
       - action: add-thread@v1
         args:
           comment: "Nice Try"
-            
-            
-
-        
