@@ -10,4 +10,4 @@ automations:
       - action: add-comment@v1
         args:
           comment: |
-            Hi Elad
+            Hi Elad. I made a change to a CM FILE
